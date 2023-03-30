@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Introduction</title>
+    <!-- Font Awesome CSS-->
+    <link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="res/bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="particles-js"></div>
+    <div class="container">
+        <div id="main" class="page">
+            <h1 style="opacity: 0; transition: opacity 1s ease-in-out;">Welcome to my homepage!</h1>
+            <p style="opacity: 0; transition: opacity 1s ease-in-out;">
+                Nice to meet you！I’ m a girl who is happy to make friends with others.  I hope you can learn more about me through my personal homepage!
+            </p>
+            <script>
+				window.onload = function() {
+					document.querySelector('h1').style.opacity = '1';
+					document.querySelector('p').style.opacity = '1';
+				}
+            </script>
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div id="profile" class="page">
+            <h1>Basic Information</h1>
+            <div class="profile-content">
+                <div class="photo-container">
+                    <img src="https://i.328888.xyz/2023/03/29/iWM95y.md.png" alt="Profile Photo">
+                </div>
+                <div class="info-container">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <span>Name: Hanziqi</span>
+                    </div>
+                    <!-- Add more info items here -->
+                    <div class="info-item">
+                        <i class="fas fa-birthday-cake"></i>
+                        <span>Age: 19</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-venus-mars"></i>
+                        <span>Gender: Female</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone: 123456789</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: 2926938224@qq.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-qq"></i>
+                        <span>QQ: 2926938224</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Residence: <a href="https://map.baidu.com/search/%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E9%99%A2(%E7%A7%80%E5%B1%B1%E5%A0%82)/@13063069.875,4693855.19,19z?querytype=s&da_src=shareurl&wd=%E5%8D%97%E5%BC%80%E5%A4%A7%E5%AD%A6%E6%96%B0%E9%97%BB%E4%B8%8E%E4%BC%A0%E6%92%AD%E5%AD%A6%E9%99%A2(%E7%A7%80%E5%B1%B1%E5%A0%82)&c=332&src=0&wd2=%E5%A4%A9%E6%B4%A5%E5%B8%82%E6%B4%A5%E5%8D%97%E5%8C%BA&pn=0&sug=1&l=13&b=(13028158.80841954,4691438.42541108;13070062.783295609,4711534.666326611)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&sug_forward=ce8eb326364b52f67369d32d&device_ratio=2"target="_blank">Tianjin, China</a></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Education: Undergraduate reading</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-university"></i>
+                        <span>School: <a href="https://www.nankai.edu.cn/" target="_blank">Nankai University</a></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-book"></i>
+                        <span>Major: Journalism</span>
+                    </div>
+            </div>
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </div>
+        <div id="skills" class="page">
+            <h1>Professional Skills</h1>
+			<p>My major is journalism, and I have gradually mastered some professional skills in my study. I joined the team of reporters of Nankai University's school newspaper， so I have relatively rich experience in interviewing others and reporting events. I can also properly typeset the text to make it look more beautiful. My abilities include taking portrait photography and landscape photography. After taking photos, I can use tools to modify them.</p>
+            <!-- Add your professional skills here -->
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div id="education" class="page">
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+            <h1>Hobby</h1>
+			<p>I have an inclination toward painting and taking photos. Painting and taking photos are both ways for me to create new things or a new world. Painting needs a pen, while taking photos needs a camera. Although my ability is not very good, I can gain happiness and satisfaction from them, transforming my perception of the world into something with my personal characteristics, and then conveying it to others. I recognize my existence through the inputs and outputs, and finding a balance from that.</p>
+            <!-- Add your education history here -->
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+        <div id="contact" class="page">
+            <h1>Motto</h1>
+			<p>Let life be beautiful like summer flowers and death like autumn leaves.</p>
+            <!-- Add your contact information here -->
+            <div class="arrow-down" onclick="scrollToNextPage()"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </div>
+    <div class="dot-navigation">
+        <span class="dot" onclick="navigateTo('main')"></span>
+        <span class="dot" onclick="navigateTo('profile')"></span>
+        <span class="dot" onclick="navigateTo('skills')"></span>
+        <span class="dot" onclick="navigateTo('education')"></span>
+        <span class="dot" onclick="navigateTo('contact')"></span>
+    </div>
+    <script src="js/photo-rotation.js"></script>
+</body>
+</html>
